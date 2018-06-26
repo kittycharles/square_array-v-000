@@ -1,6 +1,3 @@
 def square_array(array)
-  array.each do |i|
-     i ** 2
-   end
-   return array
+  array.inject([]){|a,b| a << b**2}
 end
